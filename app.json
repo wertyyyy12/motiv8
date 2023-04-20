@@ -2,6 +2,7 @@
   "expo": {
     "name": "motiv8",
     "slug": "motiv8",
+    "scheme": "motiv8",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,11 +12,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wertyyyy12.motiv8"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +24,14 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fe76ac4f-3fef-460d-be11-e8b86e3a2690"
+      }
+    },
+    "owner": "wertyyyy12"
   }
 }
